@@ -1,0 +1,102 @@
+:root {
+  --calendar-nav-backcolor: rgba(53, 246, 95, 0.932);
+  --calendar-days-hover: greenyellow;
+  --calendar-currentdate: green;
+  --calendar-width: 50px;
+  --calendar-height: 55px;
+}
+
+.container {
+  width: max-content;
+  height: max-content;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(236, 236, 236, 0.774);
+}
+
+#input_date {
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calendar {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.calendar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px 15px 0 0;
+  background-color: var(--calendar-nav-backcolor);
+  color: white;
+  font-weight: 200px;
+  line-height: 25px;
+}
+
+.month-year h2 {
+  font-size: 20px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+  text-align: center;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+  text-align: center;
+}
+
+.current-date {
+  border: 1px solid var(--calendar-currentdate);
+  border-radius: 70%;
+}
+
+.calendar-days div:hover {
+  background-color: var(--calendar-days-hover);
+  cursor: pointer;
+  border-radius: 70%;
+}
+
+/* .click {
+  backgroundcolor: greenyellow;
+  borderradius: 70%;
+} */
+
+.bi-caret-right-fill,
+.bi-caret-left-fill {
+  cursor: pointer;
+}
+
+.calendar-days > div {
+  height: var(--calendar-height);
+  width: var(--calendar-width);
+  font-size: calc(var(--calendar-width) / 4);
+  display: grid;
+  place-items: center;
+}
+
+.calendar-grid > div {
+  height: var(--calendar-height);
+  width: var(--calendar-width);
+  font-size: calc(var(--calendar-width) / 4);
+  display: grid;
+  place-items: center;
+}
+
+.calendar {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}

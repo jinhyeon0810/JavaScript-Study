@@ -1,0 +1,24 @@
+# Node.js dependencies
+/node_modules/
+
+# Build output
+/build/
+/dist/
+
+# Log files
+*.log
+
+# IDE specific
+/.vscode/
+/.idea/
+
+# Dependency directories
+/pnpm-debug.log
+/yarn-error.log
+/.pnp/
+
+# Compiled output of TypeScript
+*.tsbuildinfo
+
+# Debug folder
+/debug/
